@@ -1,5 +1,5 @@
 # 7Net
-7Net new features - IA - Clean Architecture - TDD
+7Net new features - IA - Hexagon clean architecture - TDD - entropy
 
 ***
 
@@ -19,7 +19,7 @@ https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/comm
         :7netTest
 
 ***
-    TDD:
+TDD:
 https://en.wikipedia.org/wiki/Test-driven_development
 ***
 
@@ -61,3 +61,8 @@ Nuget
 `dotnet add package Microsoft.EntityFrameworkCore`
 
 `dotnet add package Microsoft.EntityFrameworkCore.Design`
+
+
+***
+
+    https://sourcemaking.com/antipatterns/software-development-antipatterns
