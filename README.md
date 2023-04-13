@@ -6,18 +6,16 @@
 [//]: <> (should update to DDD) 
 Architecture
 
-    Corp.DOMAIN
-        BAL: Business logic layer.
-        DTO: Data transfer objects.
-    Corp.DATA
-        DAL: Data acess layer.
-        Migrations EF.
-    Corp.API
-        API: Web API.
-    Corp.WEB:
-        APP: Application client.
-    Corp.TEST:
-        UnitTest: Unit Test project.
+https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures
+    
+    Domain Services 
+        :7NetCore
+    Infrastructure
+        :7NetInfrastructure
+    User Interface
+        :7NetMaui
+    Test
+        :7netTest
 
 ***
 
