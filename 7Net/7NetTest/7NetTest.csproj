@@ -23,4 +23,7 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\7Net\7NetCore.csproj" />
+  </ItemGroup>
 </Project>

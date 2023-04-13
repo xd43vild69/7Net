@@ -1,5 +1,5 @@
 # 7Net
-7Net new features - IA - Clean Architecture
+7Net new features - IA - Clean Architecture - TDD
 
 ***
 
@@ -9,7 +9,7 @@ Architecture
 https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures
     
     Domain Services 
-        :7NetCore
+        :7NetCore (7Net legacy)
     Infrastructure
         :7NetInfrastructure
     User Interface
@@ -17,6 +17,9 @@ https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/comm
     Test
         :7netTest
 
+***
+    TDD:
+        https://en.wikipedia.org/wiki/Test-driven_development
 ***
 
 ## Commands
