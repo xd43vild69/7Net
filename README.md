@@ -4,9 +4,10 @@
 ***
 
 [//]: <> (should update to DDD) 
-Architecture
-
+Architecture:
 https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures
+
+***
     
     Domain Services 
         :7NetCore (7Net legacy)
@@ -19,7 +20,7 @@ https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/comm
 
 ***
     TDD:
-        https://en.wikipedia.org/wiki/Test-driven_development
+https://en.wikipedia.org/wiki/Test-driven_development
 ***
 
 ## Commands
