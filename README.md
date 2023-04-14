@@ -64,5 +64,5 @@ Nuget
 
 
 ***
-
-    :boom: https://sourcemaking.com/antipatterns/software-development-antipatterns
+:boom:
+https://sourcemaking.com/antipatterns/software-development-antipatterns
