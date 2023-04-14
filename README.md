@@ -1,6 +1,5 @@
 # 7Net
-7Net new features - IA - Hexagon clean architecture - TDD - entropy
-
+7Net new features - Graph theory - IA - Hexagonal architecture - TDD - Entropy - :skull:
 ***
 
 [//]: <> (should update to DDD) 
