@@ -1,12 +1,13 @@
 ﻿using System;
+using _7Net.Enums;
+
 namespace _7Net.Aggregate
 {
-    //It could be infer from UI
-    public class Node : Band
+    public partial class Node : Band
     {
         public List<Connection> Inputs { get; set; }
         public List<Connection> Outputs { get; set; }
-        public Guid NodeId { get; set; }
+        public Guid NodeId { get; }
 
         public Node()
         {
@@ -15,24 +16,25 @@ namespace _7Net.Aggregate
             Outputs = new List<Connection>();
         }
 
-        public void ConnectInput(Guid source)
+        public void ConnectInput(Guid sourceId, PropertiesEnum property)
         {
-            Inputs.Add(new Connection(source, NodeId));
+			//TODO: a property could be only assign by 1 connection in time, else override.
+            Inputs.Add(new Connection(sourceId, NodeId, property));
         }
 
-        public void DisconnectInput(Guid source)
+        public void DisconnectInput(Guid source, PropertiesEnum property)
         {
-            Inputs.Remove(new Connection(source, NodeId));
+            Inputs.Remove(new Connection(source, NodeId, property));
         }
 
-        public void ConnectOutput(Guid destination)
+        public void ConnectOutput(Guid destination, PropertiesEnum property)
         {
-            Outputs.Add(new Connection(NodeId, destination));
+            Outputs.Add(new Connection(NodeId, destination, property));
         }
 
-        public void DisconnectOutput(Guid destination)
+        public void DisconnectOutput(Guid destination, PropertiesEnum property)
         {
-            Outputs.Remove(new Connection(NodeId, destination));
+            Outputs.Remove(new Connection(NodeId, destination, property));
         }
     }
 }
