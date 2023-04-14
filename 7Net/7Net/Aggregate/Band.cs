@@ -13,7 +13,7 @@
         public List<Guid>? ThemesId { get; set; }
         public string? LastLabel { get; set; }
         public string? imageLogo { get; set; }
-        public List<string>? imagesBand { get; set; }
+        public List<Image>? imagesBand { get; set; }
         public List<Discography>? Discography { get; set; }
         public List<Member>? Members { get; set; }
         public List<Interview>? Interviews { get; set; }
@@ -21,7 +21,6 @@
         public List<Links>? RelatedLinks { get; set; }
         public Guid CreatedId { get; set; }
         public List<Guid>? ModifiedId { get; set; }
-
     }
 }
 
