@@ -11,30 +11,30 @@ namespace _7Net.Aggregate
 
         public Node()
         {
-            NodeId = new Guid();
+            NodeId = Guid.NewGuid();
             Inputs = new List<Connection>();
             Outputs = new List<Connection>();
         }
 
-        public void ConnectInput(Guid sourceId, PropertiesEnum property)
+        public void ConnectInput(Guid inputId, PropertiesEnum property)
         {
-			//TODO: a property could be only assign by 1 connection in time, else override.
-            Inputs.Add(new Connection(sourceId, NodeId, property));
+            //TODO: a property could be only assign by 1 connection in time, else override.
+            Inputs.Add(new Connection(inputId, NodeId, property));
         }
 
-        public void DisconnectInput(Guid source, PropertiesEnum property)
+        public void DisconnectInput(Guid inputId, PropertiesEnum property)
         {
-            Inputs.Remove(new Connection(source, NodeId, property));
+            Inputs.Remove(new Connection(inputId, NodeId, property));
         }
 
-        public void ConnectOutput(Guid destination, PropertiesEnum property)
+        public void ConnectOutput(Guid outputId, PropertiesEnum property)
         {
-            Outputs.Add(new Connection(NodeId, destination, property));
+            Outputs.Add(new Connection(NodeId, outputId, property));
         }
 
-        public void DisconnectOutput(Guid destination, PropertiesEnum property)
+        public void DisconnectOutput(Guid outputId, PropertiesEnum property)
         {
-            Outputs.Remove(new Connection(NodeId, destination, property));
+            Outputs.Remove(new Connection(NodeId, outputId, property));
         }
     }
 }
