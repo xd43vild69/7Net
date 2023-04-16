@@ -15,7 +15,19 @@ public class CoreNodeTest
 
         core.ConnectInput(node1, node2, PropertiesEnum.Genre);
 
-        var x = string.Empty;
         Assert.True(node1?.Inputs?.FirstOrDefault()?.Source == node2.NodeId);
+    }
+
+    [Fact]
+    public void Should_Disconnect_Input_Node_Property()
+    {
+        var core = new Core();
+        var node1 = new Node();
+        var node2 = new Node();
+
+        core.DisconnectInput(node1, node2, PropertiesEnum.Genre);
+
+        Assert.True(!node1?.Inputs.Any(x => x.GenreEnum == PropertiesEnum.Genre && 
+                                        x.Source == node2.NodeId));
     }
 }
