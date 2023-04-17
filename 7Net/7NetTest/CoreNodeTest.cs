@@ -27,7 +27,7 @@ public class CoreNodeTest
 
         core.DisconnectInput(node1, node2, PropertiesEnum.Genre);
 
-        Assert.True(!node1?.Inputs.Any(x => x.GenreEnum == PropertiesEnum.Genre && 
+        Assert.True(!node1?.Inputs.Any(x => x.GenreEnum == PropertiesEnum.Genre &&
                                         x.Source == node2.NodeId));
     }
 
@@ -52,7 +52,9 @@ public class CoreNodeTest
 
         core.DisconnectInput(node1, node2, PropertiesEnum.Genre);
 
-        Assert.True(!node1?.Outputs.Any(x => x.GenreEnum == PropertiesEnum.Genre && 
+        Assert.True(!node1?.Outputs.Any(x => x.GenreEnum == PropertiesEnum.Genre &&
                                         x.Destiny == node2.NodeId));
     }
+
+    //TODO: test for multiple connections & multiple disconnections
 }
